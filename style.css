@@ -1,10 +1,9 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #e0f7fa; /* Azul claro, semelhante ao céu limpo */
+    --cor-principal: #004d40; /* Verde escuro, evocando florestas */
+    --cor-secundaria: #00796b; /* Verde médio, representando áreas naturais */
+    --cor-destaque: #00bfae; /* Verde água, trazendo frescor e vitalidade */
+    --cor-texto: #004d40; /* Verde escuro para texto, bom contraste e leitura */
 }
 
 body {
@@ -14,16 +13,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: Arial, sans-serif; /* Adiciona uma fonte padrão */
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
 }
