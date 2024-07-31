@@ -1,4 +1,3 @@
-
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
@@ -7,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você se depara com uma nova tecnologia de IA que pode monitorar e analisar dados ambientais em tempo real para ajudar a preservar o meio ambiente. Qual o seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
+                texto: "Isso é incrível e pode ajudar muito na preservação ambiental!",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Isso é maravilhoso!",
+                texto: "Isso pode ter consequências imprevistas e precisamos ser cautelosos.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Um professor de ciências propõe um projeto sobre o uso de IA para melhorar o gerenciamento de resíduos sólidos. Como você decide contribuir para o projeto?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto: "Utilizo ferramentas de IA para analisar dados sobre resíduos e sugerir soluções baseadas em dados precisos.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "Faço uma pesquisa tradicional sobre gerenciamento de resíduos e proponho soluções com base em práticas conhecidas.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Durante uma discussão em sala de aula sobre o impacto da IA no meio ambiente, como você se posiciona?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "Acredito que a IA pode ajudar a resolver muitos problemas ambientais e deve ser adotada com entusiasmo.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto: "Preocupo-me com a possibilidade de que a dependência da IA possa gerar novos problemas e preferiria soluções mais tradicionais.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Você precisa criar um gráfico para um relatório sobre como a IA pode ser usada para monitorar a qualidade do ar. O que você faz?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto: "Crio um gráfico manualmente usando ferramentas de design, com base nos dados disponíveis.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto: "Uso uma ferramenta de IA para gerar um gráfico detalhado e preciso com base em dados reais.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Seu grupo está desenvolvendo um projeto de biologia sobre o impacto da IA na conservação da fauna. Um membro do grupo usou uma IA para gerar um relatório. O relatório está muito semelhante aos exemplos encontrados online. O que você faz?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                texto: "Considero o uso da IA como uma forma válida de contribuição e não vejo problema em utilizar o relatório gerado.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                texto: "Apesar da IA ser uma ferramenta poderosa, é importante revisar e ajustar o trabalho para refletir a nossa própria análise e contribuir com novas perspectivas.",
                 afirmacao: "afirmação"
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -106,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "No futuro próximo...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
